@@ -1,0 +1,55 @@
+{
+    "name": "Page Views per Session by Country",
+    "status": "success",
+    "body": {
+        "results": [
+            {
+                "page_views": "13",
+                "dimensions": {
+                    "country": "(not set)"
+                }
+            },
+            {
+                "page_views": "21",
+                "dimensions": {
+                    "country": "Australia"
+                }
+            },
+            {
+                "page_views": "7",
+                "dimensions": {
+                    "country": "Israel"
+                }
+            },
+            {
+                "page_views": "8",
+                "dimensions": {
+                    "country": "Singapore"
+                }
+            },
+            {
+                "page_views": "17",
+                "dimensions": {
+                    "country": "United Kingdom"
+                }
+            },
+            {
+                "page_views": "46",
+                "dimensions": {
+                    "country": "United States"
+                }
+            }
+        ],
+        "meta": {
+            "totals": {
+                "page_views": "112"
+            },
+            "maximums": {
+                "page_views": "46"
+            },
+            "minimums": {
+                "page_views": "7"
+            }
+        }
+    }
+}

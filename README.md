@@ -19,13 +19,13 @@ To bootstrap a React app development environment is not an easy task, there are 
 `$ git init`
 
 - Install dependencies:
-`$ yarn install`
+`$ npm install --python=python2.7`
 
 - Host dev environment and start to build something changing the world!
-`$ yarn start`
+`$ npm start`
 
 - To run the test with Mocha, Enzyme, Sinon and Chai:
-`$ yarn test:ci`
+`$ npm test:ci`
 
 - To generate a container/component/action and its tests:
 `$ ./bin/generate <type> <path>`
@@ -37,7 +37,6 @@ eg: `$ ./bin/generate component myNamespace/MyComponent`
 - Universal rendering, with async data support
 - Server side redirect
 - Separate vendor and app js files
-- Use [Immutable](https://facebook.github.io/immutable-js/) as store data
 - Hot Reload on client side by Webpack
 - Hot Reload on server side ([ref](https://medium.com/@kevinsimper/dont-use-nodemon-there-are-better-ways-fc016b50b45e))
 
@@ -48,7 +47,7 @@ eg: `$ ./bin/generate component myNamespace/MyComponent`
 - [Webpack](https://webpack.github.io/)@2.2
 - [Babel](https://babeljs.io/)@6
 - Express as isomorphic server
-- `yarn` as package manager
+- `npm` as package manager
 
 
 ## Testing:
@@ -67,25 +66,25 @@ When developing a feature,
 * First run a separate process converting ES6 to ES5 lively:
 
 ```
-$ yarn run test:watch
+$ npm run test:watch
 ```
 
 * Run the test case of a single file/directory by:
 
 ```
-$ yarn test -- <the-file-path>
+$ npm test -- <the-file-path>
 ```
 
 For example:
 
 ```
-$ yarn test -- app/test/actions
+$ npm test -- app/test/actions
 ```
 
 * Before deployment, run all the test cases to make sure everything is fine by:
 
 ```
-$ yarn test:ci
+$ npm test:ci
 ```
 
 ### Why
@@ -183,9 +182,9 @@ associated settings can be found in the `entry` field of `webpack.config.js`.
 
 ## For Windows Users:
 
-### `yarn test`:
+### `npm test`:
 
-The single quotes in `yarn test` script surrounding path do not work on Windows, while [they're necessary on unix-like machines](https://github.com/mochajs/mocha/issues/1115).
+The single quotes in `npm test` script surrounding path do not work on Windows, while [they're necessary on unix-like machines](https://github.com/mochajs/mocha/issues/1115).
 Please remove them in `scripts.test` section in `package.json` like this:
 
 ```
@@ -203,7 +202,7 @@ To deploy this app to production environment:
 
 - Use whatever tool to upload this app to server. ([Capistrano](http://capistranorb.com/) is a good choice.)
 
-- Run `$ NODE_ENV=production yarn install` on server
+- Run `$ NODE_ENV=production npm install` on server
   - After the installation above, `postinstall` script will run automatically, building front-end related assets and rev-ed server code under `dist/` folder.
 
 - Kick off the server with:

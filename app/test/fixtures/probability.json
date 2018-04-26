@@ -1,0 +1,52 @@
+{
+    "name": "Page Views per Session Probability Distribution",
+    "description": "Used to show the spread of likely values for page views",
+    "status": "success",
+    "body": [
+        {
+            "dimensions": {},
+            "probabilities": [
+                {
+                    "label": "0",
+                    "probability": 0.007
+                },
+                {
+                    "label": "1",
+                    "probability": 0.021
+                },
+                {
+                    "label": "2",
+                    "probability": 0.053
+                },
+                {
+                    "label": "3",
+                    "probability": 0.143
+                },
+                {
+                    "label": "4",
+                    "probability": 0.216
+                },
+                {
+                    "label": "5",
+                    "probability": 0.263
+                },
+                {
+                    "label": "6",
+                    "probability": 0.172
+                },
+                {
+                    "label": "7",
+                    "probability": 0.078
+                },
+                {
+                    "label": "8",
+                    "probability": 0.037
+                },
+                {
+                    "label": "9",
+                    "probability": 0.01
+                }
+            ]
+        }
+    ]
+}   
