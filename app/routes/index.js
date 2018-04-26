@@ -7,6 +7,7 @@ import App from 'containers/App'
 import Intro from 'containers/Intro'
 import Questions from 'containers/Questions'
 import Question from 'containers/Question'
+import Metric from 'containers/Metric'
 
 export default function(history) {
   return (
@@ -14,6 +15,7 @@ export default function(history) {
       <Route path="/" component={App}>
         <Route path="questions" component={Questions} />
         <Route path="questions/:id" component={Question} />
+        <Route path="metric" component={Metric} />
         <IndexRoute component={Intro} />
       </Route>
     </Router>
